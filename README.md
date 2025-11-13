@@ -11,9 +11,9 @@ Para ejecutar la aplicación localmente, sigue estos sencillos pasos:
 **Clonar el repositorio**:
 
 ```
-Bash
-git clone 
-cd
+Bash 
+git clone https://github.com/Sempi18/ITS-TrabajoDesarrolloMovil-Rick-Morty.git
+cd ITS-TrabajoDesarrolloMovil-Rick-Morty
 ```
 
 **Instalar dependencias**:
