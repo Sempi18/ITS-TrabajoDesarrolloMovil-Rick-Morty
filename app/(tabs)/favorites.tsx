@@ -15,8 +15,8 @@ import { logEvent } from "../../telemetry/telemetry";
 import { useCharacterStatusColor } from "../../hooks/useCharacterStatusColor";
 const FavoriteCard = ({ character, styles }) => {
   const { dispatch } = useFavorites();
-  const [fadeAnim] = useState(new Animated.Value(1)); // 👈 Animación para efecto de eliminación
-  const statusColor = useCharacterStatusColor(character.status); // 👈 Nuevo: color según estado
+  const [fadeAnim] = useState(new Animated.Value(1)); //  Animación para efecto de eliminación
+  const statusColor = useCharacterStatusColor(character.status);
 
   const handleRemoveFavorite = () => {
     logEvent("Remove Favorite", {
@@ -24,7 +24,7 @@ const FavoriteCard = ({ character, styles }) => {
       characterName: character.name,
     });
 
-    // 👇 Animación antes de eliminar
+    // Animación antes de eliminar
     Animated.timing(fadeAnim, {
       toValue: 0,
       duration: 250,
