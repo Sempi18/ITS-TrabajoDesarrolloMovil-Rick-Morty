@@ -12,8 +12,7 @@ import {
 import { useFavorites } from "../../contexts/FavoritesContext";
 import { useTheme } from "../../contexts/ThemeContext";
 import { logEvent } from "../../telemetry/telemetry";
-import { useCharacterStatusColor } from "../../hooks/useCharacterStatusColor"; // 👈 Nuevo hook para color dinámico de estado
-
+import { useCharacterStatusColor } from "../../hooks/useCharacterStatusColor";
 const FavoriteCard = ({ character, styles }) => {
   const { dispatch } = useFavorites();
   const [fadeAnim] = useState(new Animated.Value(1)); // 👈 Animación para efecto de eliminación

@@ -9,9 +9,8 @@ import React, {
 } from "react";
 import { LayoutAnimation, useColorScheme } from "react-native";
 
-const THEME_KEY = "appTheme_v2"; // versión nueva para evitar conflictos
+const THEME_KEY = "appTheme_v2";
 
-// 🎨 Definición de temas cósmicos
 const cosmicLight = {
   background: "#EDE8FF",
   cardBackground: "#F8F6FF",
@@ -38,7 +37,7 @@ export const ThemeContext = createContext({
   toggleTheme: () => {},
 });
 
-// 🌠 Provider del Tema
+// Provider del Tema
 export const ThemeProvider = ({ children }) => {
   const systemTheme = useColorScheme();
   const [themeMode, setThemeMode] = useState(systemTheme || "light");
